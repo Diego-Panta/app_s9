@@ -1,76 +1,92 @@
-# App S9 - SharedPreferences Demo
+# 📱 App_S9 - Gestión de Perfil y Preferencias
 
-Aplicación Android de ejemplo que demuestra el uso básico de SharedPreferences para almacenamiento persistente de datos.
+**App_S9** es una aplicación Android educativa desarrollada en Kotlin que permite al usuario gestionar su información personal (perfil), controlar el tema visual (claro/oscuro), y observar la cantidad de veces que ha ingresado a la aplicación.
 
-## 📱 Descripción
+---
 
-Esta aplicación implementa un sistema simple de SharedPreferences que permite:
-- Guardar y recuperar datos de usuario
-- Detectar la primera ejecución de la app
-- Limpiar todas las preferencias guardadas
+## 🚀 Funcionalidades principales
 
-## 🚀 Características
+### 🧑‍💼 Gestión de perfil de usuario
 
-- **SharedPreferencesHelper**: Clase wrapper para simplificar el uso de SharedPreferences
-- **Tipos de datos soportados**: String, Boolean, Int, Float, Long
-- **Interfaz simple**: Campos de entrada y botones para interactuar con las preferencias
-- **Persistencia**: Los datos se mantienen incluso después de cerrar la aplicación
+- Guardar y cargar datos personales: nombre, edad y correo electrónico.
+- Visualizar la información guardada en una tarjeta (`CardView`).
+- Persistencia de datos mediante `SharedPreferences`.
 
-## 📋 Requisitos
+📸 **Captura sugerida:**  
 
-- Android Studio Arctic Fox o superior
-- SDK mínimo: API 21 (Android 5.0)
-- SDK objetivo: API 34 (Android 14)
-- Kotlin 1.9.0
+![image](https://github.com/user-attachments/assets/61f8868d-8e84-4721-8fa5-59ebaf40cb2a)
 
-## 🛠️ Instalación
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/GxJohan/app_s9.git
-```
+### 🌗 Cambiar entre modo claro y oscuro
 
-2. Abre el proyecto en Android Studio
+- Incluye un `SwitchCompat` para alternar entre temas **claro y oscuro**.
+- Guarda la preferencia del usuario entre sesiones.
 
-3. Sincroniza el proyecto con Gradle
+📸 **Captura sugerida:**  
+Modo **claro** 
 
-4. Ejecuta la aplicación en un emulador o dispositivo físico
+![image](https://github.com/user-attachments/assets/6a46cf48-4ad9-4139-a24e-8004a41ee2b4)
 
-## 💻 Uso
 
-1. **Guardar datos**: Ingresa tu nombre y presiona "Guardar"
-2. **Cargar datos**: Presiona "Cargar" para ver los datos guardados
-3. **Limpiar datos**: Presiona "Limpiar Todo" para eliminar todas las preferencias
+Modo **oscuro**.
 
-## 📂 Estructura del Proyecto
+![image](https://github.com/user-attachments/assets/fc6527a1-ed7f-4ac0-acbd-49938b356691)
 
-```
-app_s9/
-├── app/
-│   └── src/
-│       └── main/
-│           ├── java/com/example/app_s9/
-│           │   ├── MainActivity.kt
-│           │   └── SharedPreferencesHelper.kt
-│           └── res/
-│               └── layout/
-│                   └── activity_main.xml
-└── SharedPreferences_Guide.md
-```
 
-## 📖 Documentación
+---
 
-Para más detalles sobre la implementación y cómo extender la funcionalidad, consulta [SharedPreferences_Guide.md](SharedPreferences_Guide.md)
+### 📊 Contador de visitas
 
-## 🤝 Contribuciones
+- La app cuenta automáticamente cuántas veces se ha abierto.
+- Se muestra el total en pantalla.
+- Permite reiniciar el contador manualmente.
 
-Las contribuciones son bienvenidas. Por favor:
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+📸 **Captura sugerida:**  
 
-## 📄 Licencia
+![image](https://github.com/user-attachments/assets/ba716855-f1ff-4712-a5d0-9dc05efab671)
 
-Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
+![image](https://github.com/user-attachments/assets/7d2fa732-5cc1-46af-8ceb-034be23d073b)
+
+![image](https://github.com/user-attachments/assets/3288b4d7-9461-4579-8057-5d0ced3f728a)
+
+
+---
+
+### 🗃️ Gestión de nombre temporal
+
+- El usuario puede escribir su nombre y guardarlo en `SharedPreferences`.
+- Luego puede cargarlo para verlo formateado.
+
+📸 **Captura sugerida:**  
+
+![image](https://github.com/user-attachments/assets/e01c46f5-bd5c-4d42-9eb3-9b929e737741)
+
+
+---
+
+## 🛠️ Tecnologías y librerías utilizadas
+
+- **Kotlin**
+- **Android Jetpack**
+  - `AppCompat`
+  - `Material Components`
+  - `ViewBinding`
+- **SharedPreferences** (para persistencia de datos)
+- **Themes personalizados** (claro y oscuro con Material 3)
+
+---
+
+## 📂 Estructura del proyecto
+
+```plaintext
+├── MainActivity.kt            # Pantalla principal: nombre, contador, tema
+├── UserProfileActivity.kt    # Pantalla de perfil de usuario
+├── SharedPreferencesHelper.kt# Clase helper para manejar SharedPreferences
+├── res/
+│   ├── layout/
+│   │   ├── activity_main.xml
+│   │   └── activity_user_profile.xml
+│   ├── values/
+│   │   ├── strings.xml
+│   │   └── themes.xml / themes-night.xml
+├── AndroidManifest.xml       # Declaración de actividades
