@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="reference|color" />
+    <attr name="cardBackgroundColor" format="reference|color" />
+    <attr name="primaryCardColor" format="reference|color" />
+    <attr name="textPrimaryColor" format="reference|color" />
+    <attr name="textSecondaryColor" format="reference|color" />
+    <attr name="primaryTextColor" format="reference|color" />
+    <attr name="primaryIconColor" format="reference|color" />
+    <attr name="primaryStrokeColor" format="reference|color" />
+    <attr name="iconTintColor" format="reference|color" />
+    <attr name="switchContainerBackground" format="reference|color|reference" />
+    <attr name="resultBackgroundDrawable" format="reference" />
+</resources>

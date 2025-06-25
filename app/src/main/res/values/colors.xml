@@ -2,4 +2,54 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Colores principales -->
+    <color name="primary_color">#6366F1</color>
+    <color name="primary_variant">#4F46E5</color>
+    <color name="secondary_color">#10B981</color>
+
+    <!-- Colores principales para modo oscuro -->
+    <color name="primary_color_dark">#818CF8</color>
+    <color name="primary_variant_dark">#6366F1</color>
+    <color name="secondary_color_dark">#34D399</color>
+
+    <!-- Colores de fondo -->
+    <color name="background_color">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#EADDFF</color>
+
+    <!-- Colores de superficie -->
+    <color name="colorSurface">#FFFBFE</color>
+    <color name="colorOnSurface">#1C1B1F</color>
+    <color name="colorSurfaceVariant">#F4EFF4</color>
+    <color name="colorOnSurfaceVariant">#49454F</color>
+
+    <!-- Colores de texto -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+
+    <!-- Colores de estado -->
+    <color name="error_color">#EF4444</color>
+    <color name="success_color">#10B981</color>
+    <color name="warning_color">#F59E0B</color>
+
+    <!-- Colores básicos -->
+    <color name="gray_light">#F3F4F6</color>
+    <color name="gray_medium">#D1D5DB</color>
+    <color name="gray_dark">#374151</color>
+
+    <!-- Colores para modo oscuro (opcional) -->
+    <color name="background_color_dark">#0F172A</color>
+    <color name="card_background_dark">#1E293B</color>
+    <color name="text_primary_dark">#F1F5F9</color>
+    <color name="text_secondary_dark">#CBD5E1</color>
+
+    <!-- Color adicional para el contexto -->
+    <color name="dark_background">#0F172A</color>
 </resources>

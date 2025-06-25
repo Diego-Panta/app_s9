@@ -5,5 +5,64 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- Tema Claro -->
+    <style name="LightTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores del sistema -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Atributos personalizados -->
+        <item name="backgroundColor">@color/background_color</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="primaryCardColor">@color/primary_color</item>
+        <item name="textPrimaryColor">@color/text_primary</item>
+        <item name="textSecondaryColor">@color/text_secondary</item>
+        <item name="primaryTextColor">@color/white</item>
+        <item name="primaryIconColor">@color/white</item>
+        <item name="primaryStrokeColor">@color/white</item>
+        <item name="iconTintColor">@color/text_secondary</item>
+        <item name="resultBackgroundDrawable">@drawable/result_background_light</item>
+        <item name="switchContainerBackground">@drawable/switch_container_background_light</item>
+
+        <!-- Configuración de la barra de estado -->
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Tema Oscuro -->
+    <style name="DarkTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores del sistema -->
+        <item name="colorPrimary">@color/primary_color_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_dark</item>
+        <item name="colorSecondary">@color/secondary_color_dark</item>
+        <item name="android:colorBackground">@color/background_color_dark</item>
+        <item name="colorSurface">@color/card_background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+
+        <!-- Atributos personalizados -->
+        <item name="backgroundColor">@color/background_color_dark</item>
+        <item name="cardBackgroundColor">@color/card_background_dark</item>
+        <item name="primaryCardColor">@color/primary_color_dark</item>
+        <item name="textPrimaryColor">@color/text_primary_dark</item>
+        <item name="textSecondaryColor">@color/text_secondary_dark</item>
+        <item name="primaryTextColor">@color/text_primary_dark</item>
+        <item name="primaryIconColor">@color/text_primary_dark</item>
+        <item name="primaryStrokeColor">@color/text_primary_dark</item>
+        <item name="iconTintColor">@color/text_secondary_dark</item>
+        <item name="resultBackgroundDrawable">@drawable/result_background_dark</item>
+        <item name="switchContainerBackground">@drawable/switch_container_background_dark</item>
+
+        <!-- Configuración de la barra de estado -->
+        <item name="android:statusBarColor">@color/background_color_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/background_color_dark</item>
+    </style>
+
     <style name="Theme.App_s9" parent="Base.Theme.App_s9" />
 </resources>

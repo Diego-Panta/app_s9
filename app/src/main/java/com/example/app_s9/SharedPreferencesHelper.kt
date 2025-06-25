@@ -12,12 +12,14 @@ class SharedPreferencesHelper(context: Context) {
     
     companion object {
         private const val PREF_NAME = "AppS9Preferences"
-        
+        const val KEY_VISIT_COUNT = "visit_count"
         // Claves para las preferencias
         const val KEY_USERNAME = "username"
         const val KEY_IS_FIRST_TIME = "is_first_time"
         const val KEY_USER_ID = "user_id"
         const val KEY_THEME_MODE = "theme_mode"
+        const val KEY_SESSION_COUNTED = "session_counted"
+        const val KEY_APP_IN_FOREGROUND = "app_in_foreground"
     }
     
     // Métodos para String

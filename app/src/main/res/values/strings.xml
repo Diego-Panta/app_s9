@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">app_s9</string>
+    <string name="app_name">App S9</string>
+    <string name="enter_name">Por favor ingresa un nombre</string>
+    <string name="data_saved">Datos guardados exitosamente</string>
+    <string name="all_data_cleared">Todas las preferencias han sido eliminadas</string>
+    <string name="welcome_first_time">¡Bienvenido por primera vez!</string>
+    <string name="not_defined">No definido</string>
+    <string name="visit_count">Visitas: %d</string>
+    <string name="counter_reset">Contador reiniciado</string>
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="profile_info">Nombre: %1$s\nEdad: %2$s\nEmail: %3$s</string>
+    <string name="user_info">Usuario: %1$s\nID: %2$d\nPrimera vez: %3$s</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="complete_all_fields">Por favor completa todos los campos</string>
+    <string name="profile_saved">Perfil guardado exitosamente</string>
 </resources>
